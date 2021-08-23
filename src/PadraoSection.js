@@ -1,5 +1,6 @@
 import React from "react";
-import "./PadraoSection.css";
+import "./padraoSection.css";
+// import { ? } from "./styles";
 
 function PadraoSection({
   mainheader,
@@ -14,7 +15,7 @@ function PadraoSection({
 }) {
   return (
     <>
-      <div className="flex-box">
+      <div>
         <h1 classname='mainheader'>{titulo}</h1>
         <div classname={mainsubtitle}>
           <h2>{subtitulo}</h2>

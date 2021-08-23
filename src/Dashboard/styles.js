@@ -1,13 +1,20 @@
 import styled from "styled-components";
 
 export const ChartWrapper = styled.div`
-  width: 80vw;
+  width: auto;
   margin: 0 auto;
 `;
 
 export const PieChartWrapper = styled.div`
   width: 48vw;
   margin: 0 auto;
+`;
+
+export const ReportSection = styled.div`
+ display: flex;
+ justify-content: space-evenly;
+ gap: 20px;
+ background-color: red;
 `;
 
 export const StyledTable = styled.table`
@@ -55,6 +62,7 @@ export const Subtitle = styled.h3`
 export const ReportWrapper = styled.div`
   padding: 40px 0;
   border-bottom: 1px solid #f0eee9;
+  width: 400px;
 `;
 
 export const LastRow = styled.div`
@@ -64,9 +72,10 @@ export const LastRow = styled.div`
 `;
 
 export const DatepickerRow = styled.div`
-  width: 60vw;
+  width: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 0 24px;
   margin: 0 auto;
 `;
 
@@ -75,9 +84,9 @@ export const DatepickerWrapper = styled.div`
   font-weight: 500;
   .picker {
     width: fit-content;
-    border-color: #a2c1f2;
+    border-color: #c0c0c0;
     border-radius: 10px;
-    background-color: #d3dded;
+    background-color: #fff;
     text-align: center;
     line-height: 20px;
     font-size: 1rem;

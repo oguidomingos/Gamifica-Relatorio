@@ -6,9 +6,9 @@ import SourceReport from "./sourceReport";
 import BrowsersReport from "./browsersReport";
 import DevicesReport from "./devicesReport";
 import Header from "../Components/header";
-import { LastRow } from "./styles";
+import { LastRow, ReportSection } from "./styles";
 import InputField from "../Components/input";
-import Report from "../Report/Report"
+import Report from "./report/report";
 
 const DashBoard = () => {
   const [viewID, setViewID] = useState(null);
@@ -19,17 +19,24 @@ const DashBoard = () => {
       <Header />
       {viewID ? (
         <>
+        <ReportSection>
           <Report/>
           <DayVisitsReport
             metric={"ga:users"}
             title={"Users"}
             viewID={viewID}
           />
+        </ReportSection>
           <DayVisitsReport
             metric={"ga:sessions"}
             title={"Sessions"}
             viewID={viewID}
           />
+          {/* <DayVisitsReport
+            metric={"ga:hostname"}
+            title={"Hostname"}
+            viewID={viewID}
+          /> */}
           
           <CountriesReport viewID={viewID} />
           <PageviewsReport viewID={viewID} />
