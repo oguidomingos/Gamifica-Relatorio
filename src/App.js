@@ -4,7 +4,7 @@ import { renderButton, checkSignedIn } from "./GoogleAuth/authUtils";
 import Dashboard from "./Dashboard/dashboard";
 import styled from "styled-components";
 import Footer from "./Components/footer";
-import Report from "./Report/Report";
+import Report from "./Dashboard/report/report";
 
 function App() {
   const [isSignedIn, setIsSignedIn] = useState(false);

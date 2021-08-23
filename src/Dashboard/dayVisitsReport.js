@@ -7,11 +7,12 @@ import {
   ChartTitle,
   Subtitle,
   DatepickerRow,
+  ReportSection,
 } from "./styles";
 import CustomDatePicker from "./datepicker";
 import { queryReport } from "./queryReport";
 import { formatDate } from "./utils";
-import PadraoSection from "../PadraoSection"
+import Report from "./report/report"
 
 const DayVisitsReport = (props) => {
   const INITIAL_STATE = {
