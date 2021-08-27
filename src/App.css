@@ -1,6 +1,7 @@
 .App {
-  font-family: 'Montserrat Medium', 'Roboto';
+  font-family: 'Lato';
   align-items: flex-end;
   padding-top: 40px;
-  padding-left: 50px;
+  background: linear-gradient(180deg, #030303 0%, #004352 100%);
+
 }

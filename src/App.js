@@ -6,7 +6,10 @@ import styled from "styled-components";
 import Footer from "./Components/footer";
 import Report from "./Dashboard/report/report";
 
+
+
 function App() {
+  
   const [isSignedIn, setIsSignedIn] = useState(false);
 
   const updateSignin = (signedIn) => {
@@ -32,25 +35,20 @@ function App() {
   });
 
   return (
-    <div className="App">
-      {!isSignedIn ? (
-        <>
-          <Title>Google Analytics Dashboard</Title>
-          
-          <ButtonContainer>
-            <div id="signin-button"></div>
-          </ButtonContainer>
-          <Footer />
-        </>
-      ) : (
-
-        <Dashboard />
-        
-        
-      )}
-     
-      
-    </div>
+    
+      <div className="App">
+        {!isSignedIn ? (
+          <>
+            <ButtonContainer>
+              <div id="signin-button"></div>
+            </ButtonContainer>
+            <Footer />
+          </>
+        ) : (
+          <Dashboard />
+        )}
+      </div>
+    
   );
 }
 
