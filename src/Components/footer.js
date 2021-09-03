@@ -5,25 +5,8 @@ import logo from "../assets/logo.png";
 
 const Footer = () => (
   <FooterContainer>
-    <div className="developed">
-      {`Developed by `}
-      <a href="https://ramonak.io" target="_blank" rel="noopener noreferrer">
-        <div className="logo-container">
-          <img src={logo} alt="Logo" />
-        </div>
-        {`Katsiaryna (Kate) Lupachova`}
-      </a>
-    </div>
-    <div className="source">
-      <a
-        href="https://github.com/KaterinaLupacheva/react-google-analytics-dashboard"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <GoMarkGithub />
-        {`Source `}
-      </a>
-    </div>
+    
+     
   </FooterContainer>
 );
 
@@ -40,14 +23,13 @@ const FooterContainer = styled.div`
   width: 100%;
   height: 10vh;
   font-weight: 500;
-  color: #4b2f57;
+  background-color: transparent;
 
   a {
     text-decoration: none;
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: #4b2f57;
   }
 
   .developed {

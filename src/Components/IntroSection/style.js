@@ -2,9 +2,12 @@ import styled from "styled-components";
 
 export const InputRow = styled.div`
   display: flex;
-  position: absolute;
-  top:70px;
+  position: relative;
+  top:30px;
   align-self:center;
+  margin: 0 auto;
+  height: 690px;
+  background-color: red;
 `;
 
 

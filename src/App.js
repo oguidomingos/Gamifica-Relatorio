@@ -7,7 +7,6 @@ import Footer from "./Components/footer";
 import Report from "./Dashboard/report/report";
 
 
-
 function App() {
   
   const [isSignedIn, setIsSignedIn] = useState(false);
@@ -18,6 +17,9 @@ function App() {
       renderButton();
     }
   };
+
+  
+  
 
   const init = () => {
     checkSignedIn()
@@ -47,7 +49,7 @@ function App() {
         ) : (
           <Dashboard />
         )}
-      </div>
+      </div> 
     
   );
 }

@@ -11,10 +11,31 @@ export const PieChartWrapper = styled.div`
 `;
 
 export const ReportSection = styled.div`
- display: flex;
- justify-content: space-evenly;
- gap: 20px;
- background-color: red;
+  display: flex;
+  background-color: transparent;
+  position: absolute;
+  width: 1350px;
+  flex-direction: row;
+  flex: 1;
+  gap: 50px;
+  height: 640px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+`;
+
+export const BackgroundHolder = styled.div`
+  display: flex;
+  background-color: red;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+  height: 640px;
+  flex-direction: row;
 `;
 
 export const StyledTable = styled.table`
@@ -96,4 +117,34 @@ export const DatepickerWrapper = styled.div`
 
 export const DatepickerLabel = styled.label`
   padding-right: 5px;
+`;
+
+export const Report = styled.div`
+  display: flex;
+`;
+
+export const Conclusion = styled.div`
+  height: 600px;
+  background-color: black;
+  bottom: 0;
+  width: 100%;
+  height: 640px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+`;
+
+export const Teste = styled.div`
+  position: fixed;
+  height: 640px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  top: 70px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: 0 auto;
 `;

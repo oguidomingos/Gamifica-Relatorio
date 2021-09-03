@@ -11,7 +11,8 @@ export const Container = styled.div`
   right: 0;
   top: 0;
   left: 0;
-  background-color: #030303 15%;
+  background: rgb (3, 3, 3, 0.8);
+
   
 `;
 
@@ -19,9 +20,11 @@ export const Appbarcontainer = styled.div`
   height: 32px;
   max-width: 1255px;
   position: fixed;
-  top: 32px;
-  left: 130px;
+  top: 22px;
+  left: 0px;
   z-index: 100;
+  position: relative;
+  margin: 0 auto;
 
 
 `; 
@@ -66,9 +69,9 @@ export const IntroSection = styled.div`
   display: flex;
   height: 430px;
   width: 1255px;
-  position: absolute;
+  position: relative;
   background-color: transparent;
-  margin: 132px;
+  margin: 0 auto;
   top: 0px;
   gap: 50px;
 `;
@@ -100,8 +103,12 @@ export const TextBox = styled.div`
 
 export const InputRow = styled.div`
   display: flex;
-  position: relative;
-  top: 30px;
+  position: absolute;
+  top: 70px;
+  align-items: center;
+  height: 690px;
+  background-color: transparent;
+  width: 100%;
 
   input {
     line-height: 7vh;
@@ -121,7 +128,7 @@ export const InputRow = styled.div`
     display: flex;
     position: absolute;
     height: 28px;
-    width: 300px;
+    width: 170px;
     right: 0px;
     top: 380px;
     
